@@ -8,7 +8,7 @@ body {
   background: #fff;
   display: flex;
   flex-direction: row-reverse;
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 /* Main content */
@@ -224,4 +224,48 @@ ol {
   font-size: 14px;
   font-weight: 700;
   line-height: normal;
+}
+
+@media screen and (max-width: 960px) {
+  body {
+    padding: 20px;
+  }
+  .main_content {
+    padding: 40px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .sidebar {
+    width: 250px;
+  }
+  .my_photo {
+    width: 250px;
+    height: auto;
+  }
+  .sidebar_content {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  body {
+    padding: 0;
+  }
+  .main_content {
+    padding: 20px;
+  }
+  .my_name {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 510px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+  }
+  .my_photo {
+    width: 100%;
+    height: auto;
+  }
 }
